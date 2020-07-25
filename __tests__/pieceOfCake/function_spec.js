@@ -1,5 +1,5 @@
 describe('for function', () => {
-  fit('should be able to define function in function scope', () => {
+  it('should be able to define function in function scope', () => {
     function outerFunction() {
       const myName = 'World';
       function innerFunction() {
@@ -17,7 +17,7 @@ describe('for function', () => {
     expect(outerFunction()).toEqual(expected);
   });
 
-  fit('should pass function as value', () => {
+  it('should pass function as value', () => {
     const sayHello = () => 'Hello';
 
     function greeting(prefixGenerator, name) {
@@ -37,7 +37,7 @@ describe('for function', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = undefined;
+    const expected = 36;
     // --end->
 
     expect(square(6, 'Hello', 4)).toEqual(expected);
@@ -51,8 +51,8 @@ describe('for function', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expectedForSingleArgument = undefined;
-    const expectedForTwoArguments = undefined;
+    const expectedForSingleArgument = -5;
+    const expectedForTwoArguments = 2;
     // --end->
 
     expect(minus(5)).toEqual(expectedForSingleArgument);
@@ -70,7 +70,7 @@ describe('for function', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = undefined;
+    const expected = 16;
     // --end->
 
     expect(power(4)).toEqual(expected);
@@ -89,8 +89,8 @@ describe('for function', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expectedReturnValue = undefined;
-    const expectedWord = undefined;
+    const expectedReturnValue = 'Changed';
+    const expectedWord = 'Origin';
     // --end->
 
     expect(returnValue).toEqual(expectedReturnValue);
@@ -110,8 +110,8 @@ describe('for function', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expectedName = undefined;
-    const expectedReturnValueName = undefined;
+    const expectedName = 'Bob';
+    const expectedReturnValueName = 'Bob';
     // --end->
 
     expect(person.name).toEqual(expectedName);
@@ -128,7 +128,7 @@ describe('for function', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = undefined;
+    const expected = 'Hello';
     // --end->
 
     expect(actual).toEqual(expected);
@@ -145,13 +145,13 @@ describe('for function', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = undefined;
+    const expected = 'Changed';
     // --end->
 
     expect(guessIfIAmChanged).toEqual(expected);
   });
 
-  it('should create some recursion trick', () => {
+  fit('should create some recursion trick', () => {
     function findSolution(target) {
       function find(current, history) {
         // eslint-disable-next-line eqeqeq
@@ -166,7 +166,7 @@ describe('for function', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = undefined;
+    const expected = '(((1 * 3) + 5) * 3)';
     // --end->
 
     expect(findSolution(24)).toEqual(expected);
