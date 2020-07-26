@@ -70,7 +70,7 @@ describe('for object', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = undefined;
+    const expected = 'Bob';
     // --end->
 
     expect(name).toEqual(expected);
@@ -82,7 +82,7 @@ describe('for object', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = undefined;
+    const expected = '{"name":"Bob","yearOfBirth":2019}';
     // --end->
 
     expect(json).toEqual(expected);
@@ -94,7 +94,7 @@ describe('for object', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = undefined;
+    const expected = { color: 'Red', value: '#ff0000' };
     // --end->
 
     expect(color).toEqual(expected);
@@ -108,7 +108,7 @@ describe('for object', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = undefined;
+    const expected = 'The white rabbit says Hello.';
     // --end->
 
     expect(rabbit.speak('Hello')).toEqual(expected);
@@ -124,7 +124,7 @@ describe('for object', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = undefined;
+    const expected = 'The white rabbit says Hello.';
     // --end->
 
     expect(rabbit.speak('Hello')).toEqual(expected);
@@ -139,7 +139,7 @@ describe('for object', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = undefined;
+    const expected = [0, 2, 3];
     // --end->
 
     expect(actual).toEqual(expected);
@@ -150,18 +150,18 @@ describe('for object', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = undefined;
+    const expected = Object.prototype;
     // --end->
 
     expect(Object.getPrototypeOf(emptyObject)).toBe(expected);
   });
 
-  it('should get null for object prototype\'s prototype', () => {
+  fit('should get null for object prototype\'s prototype', () => {
     const objectPrototype = Object.prototype;
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = undefined;
+    const expected = null;
     // --end->
 
     expect(Object.getPrototypeOf(objectPrototype)).toEqual(expected);
