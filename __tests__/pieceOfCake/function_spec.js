@@ -151,7 +151,7 @@ describe('for function', () => {
     expect(guessIfIAmChanged).toEqual(expected);
   });
 
-  fit('should create some recursion trick', () => {
+  it('should create some recursion trick', () => {
     function findSolution(target) {
       function find(current, history) {
         // eslint-disable-next-line eqeqeq
@@ -183,7 +183,7 @@ describe('for function', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = undefined;
+    const expected = 6;
     // --end->
 
     expect(sum(1, 2, 3)).toEqual(expected);
@@ -200,7 +200,7 @@ describe('for function', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = undefined;
+    const expected = 6;
     // --end->
 
     const parameters = [1, 2, 3];
@@ -223,7 +223,7 @@ describe('for function', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = undefined;
+    const expected = 25;
     // --end->
 
     expect(actual).toEqual(expected);
@@ -238,7 +238,7 @@ describe('for function', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = undefined;
+    const expected = [0, 3, 6];
     // --end->
 
     expect(labels).toEqual(expected);
@@ -253,7 +253,7 @@ describe('for function', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = undefined;
+    const expected = false;
     // --end->
 
     expect(greaterThan10(3)).toEqual(expected);
@@ -269,7 +269,7 @@ describe('for function', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = undefined;
+    const expected = 11;
     // --end->
 
     expect(actual).toEqual(expected);
@@ -289,7 +289,7 @@ describe('for function', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = undefined;
+    const expected = [0, 2, 4];
     // --end->
 
     expect(logs).toEqual(expected);
